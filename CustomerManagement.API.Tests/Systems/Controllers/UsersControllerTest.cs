@@ -1,3 +1,4 @@
+using AutoFixture;
 using CustomerManagement.API.Controllers;
 using CustomerManagement.API.Models;
 using CustomerManagement.API.Services;
@@ -15,27 +16,9 @@ public class UsersControllerTest
     {
         //Arrange
         var mockUsersService = new Mock<IUsersService>();
-        var users = new List<User>()
-            {
-                new User {
-                    Name = "Anand",
-                    Email = "anand@test.com",
-                    Address = new Address() {
-                        City = "Chennai",
-                        Street = "Test",
-                        ZipCode = "900922"
-                    }
-                },
-                new User {
-                    Name = "Naveen",
-                    Email = "naveen@test.com",
-                    Address = new Address() {
-                        City = "Gujarat",
-                        Street = "Sandiwa",
-                        ZipCode = "900921"
-                    }
-                }
-            };
+        var fixture = new Fixture();
+        var users = fixture.Create<List<User>>();
+            
         mockUsersService
            .Setup(service => service.GetAllUsers())
            .ReturnsAsync(users);
@@ -71,27 +54,8 @@ public class UsersControllerTest
     {
         //Arrange
         var mockUsersService = new Mock<IUsersService>();
-        var users = new List<User>()
-            {
-                new User {
-                    Name = "Deepak",
-                    Email = "deepak@test.com",
-                    Address = new Address() {
-                        City = "HYD",
-                        Street = "Dwefe",
-                        ZipCode = "900921"
-                    }
-                },
-                new User {
-                    Name = "Kuldeep",
-                    Email = "kul@test.com",
-                    Address = new Address() {
-                        City = "Indore",
-                        Street = "Sandiwak",
-                        ZipCode = "900925"
-                    }
-                }
-            };
+        var fixture = new Fixture();
+        var users = fixture.Create<List<User>>();
         mockUsersService
             .Setup(service => service.GetAllUsers())
             .ReturnsAsync(users);
