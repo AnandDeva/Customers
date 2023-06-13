@@ -1,7 +1,8 @@
-using Customers.API.Services;
+
+using CustomerManagement.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Customers.API.Controllers;
+namespace CustomerManagement.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]

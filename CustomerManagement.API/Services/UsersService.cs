@@ -1,6 +1,6 @@
-﻿using Customers.API.Models;
+﻿using CustomerManagement.API.Models;
 
-namespace Customers.API.Services
+namespace CustomerManagement.API.Services
 {
 
     public interface IUsersService

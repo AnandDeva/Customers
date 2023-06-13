@@ -1,4 +1,6 @@
-﻿namespace Customers.API.Models
+﻿using CustomerManagement.API.Models;
+
+namespace CustomerManagement.API.Models
 {
     public class User
     {

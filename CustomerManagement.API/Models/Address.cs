@@ -1,4 +1,4 @@
-﻿namespace Customers.API.Models
+﻿namespace CustomerManagement.API.Models
 {
     public class Address
     {

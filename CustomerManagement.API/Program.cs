@@ -1,4 +1,4 @@
-using Customers.API.Services;
+using CustomerManagement.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

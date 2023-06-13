@@ -1,6 +1,6 @@
-using Customers.API.Controllers;
-using Customers.API.Models;
-using Customers.API.Services;
+using CustomerManagement.API.Controllers;
+using CustomerManagement.API.Models;
+using CustomerManagement.API.Services;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
