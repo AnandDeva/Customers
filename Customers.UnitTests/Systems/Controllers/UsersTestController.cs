@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
 
-namespace Customers.UnitTests.Systems.Controllers;
+namespace Systems.Controllers;
 
 public class UsersTestController
 {
